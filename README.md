@@ -1,3 +1,12 @@
-# ZXE Karaoke player
-설명 : https://youtube.com/channel/UC1kEeEl3_ZZ6ZibWOm9E8BA
-문서 없음 알아서 영상 찾아서 보셈
+# ZXEKaraoke Player
+## 개요
+ZXE노래방 플레이어이다.
+## 요구사항
+- midi,electron,canvas 모듈을 깔 수 있어야 함
+- cpu 2코어 4스레드 이상(인텔 i3 3210,amd a8 7600 이상 권장) `// 이부분은 가사 렌더링시간이 초단위로 나와서 worker로 하느라 이렇게 된 거임`
+### tip
+- midi 모듈은 경로에 한글이 있으면 설치 안됨(제작자가 이걸로 몇날 며칠을 개고생했음)
+## 사용법
+### 추가사항
+- midi 반주의 길이는 가장 마지막 note off 이벤트 실행 시간+5초 이다.
+- 뮤비가 있을 경우 midi 반주의 길이는 뮤비보다 길면 안된다. 왜냐하면 뮤비가 없을땐 Date.now()를 사용하지만 뮤비가 있으면 뮤비의 currentTime 을 사용하기 때문이다.
