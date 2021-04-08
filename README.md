@@ -10,7 +10,7 @@ ZXE노래방 플레이어이다.
 - 숫자로 기록된다.
 - 마이너(단조) 인 경우 음수로 기록하면 된다.
 <table>
-    <th><td>코드</td><td>번호</td></th>
+    <th><td>번호</td></th>
     <tr><td>C</td><td>1</td></tr>
     <tr><td>C#</td><td>2</td></tr>
     <tr><td>Db</td><td>3</td></tr>
