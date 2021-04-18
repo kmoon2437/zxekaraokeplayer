@@ -11,7 +11,11 @@ ZXE노래방 플레이어이다.
 ## 사용법
 ### 준비
 - canvas 모듈의 의존성 라이브러리를 깐다.
-  - 윈도우 환경이라면 gtk를 설치한다.[32비트](http://ftp.gnome.org/pub/GNOME/binaries/win32/gtk+/2.24/gtk+-bundle_2.24.10-20120208_win32.zip) [64비트](http://ftp.gnome.org/pub/GNOME/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip)
+  - 윈도우 환경
+    - gtk를 다운받는다.[32비트](http://ftp.gnome.org/pub/GNOME/binaries/win32/gtk+/2.24/gtk+-bundle_2.24.10-20120208_win32.zip) [64비트](http://ftp.gnome.org/pub/GNOME/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip)
+    - 압축파일 안에 있는걸 `C:/GTK` 여기다가 풀어준다.
+  - 맥os 환경
+    - `brew install pkg-config cairo pango libpng jpeg giflib librsvg` 를 실행한다.(homebrew 사용)
 ### 설치/실행
 - 적당한 폴더에 download zip을 받은걸 풀어준다.(아니면 git clone해도 좋음)
 - `npm install` 명령어를 실행한다. (제작자 컴에서 15분 걸림)
