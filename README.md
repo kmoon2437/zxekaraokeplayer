@@ -9,11 +9,15 @@ ZXE노래방 플레이어이다.
 - canvas 모듈은 그냥 node에서 쓸땐 바로 컴파일이 되는데(윈도우 기준), electron에서 쓰려면 gtk라는 라이브러리를 다운받아서 c:/GTK에 풀어야 한다.
 - 제작자가 위 2개 때문에 몇날 며칠을 개고생했다.
 ## 사용법
-1. 적당한 폴더에 download zip을 받은걸 풀어준다.(아니면 git clone해도 좋음)
-2. `npm install` 명령어를 실행한다. (제작자 컴에서 15분 걸림)
-3. `npm install nan@2.14.0` 을 실행한다. (nan 2.14.1~의 버그 때문에 2.14.0으로 새로 깔아야 한다.)
-4. `electron-rebuild`를 실행한다.
-5. `electron .`를 실행하면 프로그램이 실행된다.
+### 준비
+- canvas 모듈의 의존성 라이브러리를 깐다.
+  - 윈도우 환경이라면 gtk를 설치한다.[32비트](http://ftp.gnome.org/pub/GNOME/binaries/win32/gtk+/2.24/gtk+-bundle_2.24.10-20120208_win32.zip) [64비트](http://ftp.gnome.org/pub/GNOME/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip)
+### 설치/실행
+- 적당한 폴더에 download zip을 받은걸 풀어준다.(아니면 git clone해도 좋음)
+- `npm install` 명령어를 실행한다. (제작자 컴에서 15분 걸림)
+- `npm install nan@2.14.0` 을 실행한다. (nan 2.14.1~의 버그 때문에 2.14.0으로 새로 깔아야 한다.)
+- `electron-rebuild`를 실행한다.
+- `electron .`를 실행하면 프로그램이 실행된다.
 ### 키(음정)
 - 숫자로 기록된다.
 - Minor(단조) 인 경우 음수로 하면 된다.
