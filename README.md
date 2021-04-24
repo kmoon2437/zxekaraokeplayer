@@ -26,7 +26,7 @@ canvas 모듈의 의존성 라이브러리를 깐다.
 - 적당한 폴더에 download zip을 받은걸 풀어준다.(아니면 git clone해도 좋음)
 - `npm install` 명령어를 실행한다. (제작자 컴에서 15분 걸림)
 - `npm install nan@2.14.0` 을 실행한다. (nan 2.14.1~의 버그 때문에 2.14.0으로 새로 깔아야 한다.)
-- `electron-rebuild`를 실행한다.
+- `electron-rebuild`를 실행한다. (electron에서 실행하기 위해 canvas,midi등의 모듈을 새로 빌드하는 과정)
 - `electron .`를 실행하면 프로그램이 실행된다.
 ### 키(음정)
 - 숫자로 기록된다.
