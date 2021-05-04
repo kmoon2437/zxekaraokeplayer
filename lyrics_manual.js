@@ -1,4 +1,4 @@
-[
+var ManualData = [
     {
         "bpm":197.2, // 곡의 bpm. 중간에 변경 가능
     
