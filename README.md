@@ -3,15 +3,17 @@
 ZXE노래방 플레이어이다.
 ## 요구사항
 - node.js 제일 최신. 아 모르겠고 그냥 제에ㅔㅔㅔㅔ일 최신
-- java 8 이상
-- midi,electron,canvas 모듈을 깔 수 있어야 한다.
-- 경로에는 아스키코드에 있는 문자만 있어야한다(한글같은거 있으면 오류남).
+- midi,canvas 모듈을 깔 수 있어야 한다.
+- electron을 사용할 수 있어야 한다.
+- 경로에는 아스키코드에 있는 문자만 있어야한다(한글같은거 있으면 오류남. 이유는 밑에 나옴).
 ### tip
 - midi 모듈은 경로에 한글이 있으면 설치가 안된다.
 - canvas 모듈은 그냥 node에서 쓸땐 바로 컴파일이 되는데(윈도우 기준), electron에서 쓰려면 gtk라는 라이브러리를 다운받아서 `C:/GTK`에 풀어야 한다.(밑에 나옴)
 - 제작자가 위 2개를 몰라서 몇날 며칠을 개고생했다.
 ## 사용법
 ### 준비
+electron과 관련 모듈을 깐다.
+- `npm install -g electron@latest electron-rebuild@latest` 를 실행한다.
 canvas 모듈의 의존성 라이브러리를 깐다.
 - 윈도우 환경
   - gtk를 다운받는다. [32비트](http://ftp.gnome.org/pub/GNOME/binaries/win32/gtk+/2.24/gtk+-bundle_2.24.10-20120208_win32.zip) [64비트](http://ftp.gnome.org/pub/GNOME/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip)
