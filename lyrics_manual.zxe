@@ -1,0 +1,31 @@
+Title:제목 // 주석
+Subtitle:부제목 // 없어도됨
+Key:성별.음정 // 성별은 M(남자),W또는 F(여자),X또는 C(혼성). 예시: M.1 => 남 C
+Original-key:Key와 같음 // 없어도됨. 성별뒤의 숫자(음정)에 대해서는 문서 참고
+Singer:가수
+Lyrics:작사자
+Music:작곡자 // 원곡정보가 있으면 없어도됨
+Origin:원곡정보 // 작곡자가 있으면 없어도됨
+Singer-tag:가수태그 // tag에 대해서는 문서 참고
+Lyrics-tag:작사자태그
+Music-tag:작곡자태그
+Origin-tag:원곡정보태그 // 곡정보 db저장시 Title부터 여기까지는 있어도 무시됨
+File-midi:미디반주파일
+File-mr:mr반주파일
+File-mv:뮤비파일 // 반주없이 이것만 있으면 반주소리로 영상소리가 들어감
+File-album:앨범사진파일
+Meta-layout:레이아웃 // default,gothic,gothic-jp 셋중하나
+Meta-is-medley:메들리여부 // true/false 둘중하나
+Ahh-electron:native-module-mwotgatda //사용자지정 헤더. 프로그램 개조해서 쓸때 유용함
+
+c bpm 130 // bpm 설정. c는 command의 앞글자
+c sub 발음표기 // 일본곡일 경우 유용함
+c type 0 // 해당 라인의 type을 지정할 수 있음. -1,0,1,2,3이 있음. 안넣으면 그 라인은 자동으로 0번이 됨
+t 960 글자 // 960은 재생시간을 틱단위(960=1박)로 입력. T는 text의 첫글자
+f space // 띄어쓰기를 넣음. F는 flag의 첫글자
+t 960:100 Text // 시간은 틱단위 외에 밀리초단위 사용 가능. 틱:밀리초 이런식으로
+t *960 Colored
+c nextline --verse-end // command의 경우는 내부적으로 리눅스 명령어처럼 옵션을 넣을 수 있음. nextline은 다음줄로 넘어가는건데, verse-end 옵션을 넣으면 거기서 가사를 숨김
+t 960 [밑에있는거]{위에있는거(후리가나)} // 일본어에서 유용함
+t 960 밑{위에있는거} // 밑에있는게 한글자면 대괄호없이 중괄호만 넣을수도 있음
+// nextline --verse-end가 아예 없어도 다음라인이 없으면 내부적으로 verse end로 간주함
