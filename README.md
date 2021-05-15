@@ -3,6 +3,7 @@
 ZXE노래방 플레이어이다.
 ## 요구사항
 - node.js 제일 최신. 아 모르겠고 그냥 제에ㅔㅔㅔㅔ일 최신
+- java 8 이상(node-java 모듈용)
 - midi,electron,canvas 모듈을 깔 수 있어야 한다.
 - 경로에는 아스키코드에 있는 문자만 있어야한다(한글같은거 있으면 오류남).
 ### tip
@@ -23,8 +24,6 @@ canvas 모듈의 의존성 라이브러리를 깐다.
     - 페도라: `sudo yum install gcc-c++ cairo-devel pango-devel libjpeg-turbo-devel giflib-devel`
     - Solaris: `pkgin install cairo pango pkg-config xproto renderproto kbproto xextproto`
     - OpenBSD: `doas pkg_add cairo pango png jpeg giflib`
-- 윈도우 환경이 아닌 경우 주의사항
-  - 윈
 ### 설치/실행
 - 적당한 폴더에 download zip을 받은걸 풀어준다.(아니면 git clone해도 좋음)
 - `npm install` 명령어를 실행한다. (제작자 컴에서 15분 걸림)
