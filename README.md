@@ -13,7 +13,7 @@ ZXE노래방 플레이어이다.
 ## 사용법
 ### 준비
 electron과 관련 모듈을 깐다.
-- `npm install -g electron@latest electron-rebuild@latest` 를 실행한다.
+- `npm install -g electron@latest electron-rebuild@latest` 를 실행한다. 
 canvas 모듈의 의존성 라이브러리를 깐다.
 - 윈도우 환경
   - gtk를 다운받는다. [32비트](http://ftp.gnome.org/pub/GNOME/binaries/win32/gtk+/2.24/gtk+-bundle_2.24.10-20120208_win32.zip) [64비트](http://ftp.gnome.org/pub/GNOME/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip)
