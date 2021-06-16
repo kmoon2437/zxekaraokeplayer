@@ -3,31 +3,15 @@
 ZXE노래방 플레이어이다.
 ## 요구사항
 - node.js 제일 최신. 아 모르겠고 그냥 제에ㅔㅔㅔㅔ일 최신
-- midi,canvas,java 모듈을 깔 수 있어야 한다.
-- jdk 11 이상 (java 모듈용)
+- midi 모듈을 깔 수 있어야 한다.
 - electron을 사용할 수 있어야 한다.
 - 경로에는 아스키코드에 있는 문자만 있어야한다(한글같은거 있으면 오류남. 이유는 밑에 나옴).
 ### tip
-- midi 모듈은 경로에 한글이 있으면 설치가 안된다.
-- canvas 모듈은 그냥 node에서 쓸땐 바로 컴파일이 되는데(윈도우 기준), electron에서 쓰려면 gtk라는 라이브러리를 다운받아서 `C:/GTK`에 풀어야 한다.(밑에 나옴)
-- 제작자가 위 2개를 몰라서 몇날 며칠을 개고생했다.
+- midi 모듈은 경로에 한글이 있으면 설치가 안된다.제작자가 저걸 몰라서 몇날 며칠을 개고생했다.
 ## 사용법
 ### 준비
 electron과 관련 모듈을 깐다.
 - `npm install -g electron@latest electron-rebuild@latest` 를 실행한다.
-
-canvas 모듈의 의존성 라이브러리를 깐다.
-- 윈도우 환경
-  - gtk를 다운받는다. [32비트](http://ftp.gnome.org/pub/GNOME/binaries/win32/gtk+/2.24/gtk+-bundle_2.24.10-20120208_win32.zip) [64비트](http://ftp.gnome.org/pub/GNOME/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.1-20101229_win64.zip)
-  - 압축파일 안에 있는걸 `C:/GTK` 에다가 풀어준다.
-- 맥os 환경
-  - `brew install pkg-config cairo pango libpng jpeg giflib librsvg` 를 실행한다.([homebrew](https://brew.sh) 사용)
-- 리눅스/기타 유닉스 환경
-  - os에 따라 아래 명령어를 실행한다.
-    - 우분투: `sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev`
-    - 페도라: `sudo yum install gcc-c++ cairo-devel pango-devel libjpeg-turbo-devel giflib-devel`
-    - Solaris: `pkgin install cairo pango pkg-config xproto renderproto kbproto xextproto`
-    - OpenBSD: `doas pkg_add cairo pango png jpeg giflib`
 ### 설치/실행
 - 적당한 폴더에 download zip을 받은걸 풀어준다.(아니면 git clone해도 좋음)
 - `npm install` 명령어를 실행한다. (제작자 컴에서 15분 걸림)
