@@ -18,29 +18,8 @@ electron과 관련 모듈을 깐다.
 - `electron-rebuild`를 실행한다. (electron에서 실행하기 위해 canvas,midi등의 모듈을 새로 빌드)
   - 만일 안된다면 `npm install nan@2.14.0` 을 실행하고 다시 해보자. (이 부분은 nan 모듈의 버그 때문에 2.14.0으로 새로 깔아야 한다.)
 - `electron .`를 실행하면 프로그램이 실행된다.
-### 키(음정)
-- 숫자로 기록된다.
-- Minor(단조) 인 경우 음수로 하면 된다.
-<table>
-    <th><td>번호</td></th>
-    <tr><td>C</td><td>1</td></tr>
-    <tr><td>C#</td><td>2</td></tr>
-    <tr><td>Db</td><td>3</td></tr>
-    <tr><td>D</td><td>4</td></tr>
-    <tr><td>D#</td><td>5</td></tr>
-    <tr><td>Eb</td><td>6</td></tr>
-    <tr><td>E</td><td>7</td></tr>
-    <tr><td>F</td><td>8</td></tr>
-    <tr><td>F#</td><td>9</td></tr>
-    <tr><td>Gb</td><td>10</td></tr>
-    <tr><td>G</td><td>11</td></tr>
-    <tr><td>G#</td><td>12</td></tr>
-    <tr><td>Ab</td><td>13</td></tr>
-    <tr><td>A</td><td>14</td></tr>
-    <tr><td>A#</td><td>15</td></tr>
-    <tr><td>Bb</td><td>16</td></tr>
-    <tr><td>B</td><td>17</td></tr>
-</table>
+### 곡 데이터
+곡 데이터 생성은 [여기](./manual/song_data.md)를 참고하세요.
 
 ### 추가사항
 - midi 반주의 길이는 가장 마지막 note off 이벤트 실행 시간+3초 이다.
